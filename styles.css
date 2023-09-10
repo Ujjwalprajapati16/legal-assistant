@@ -1,204 +1,220 @@
-/* Reset some default styles for better consistency */
-body, h1, h2, p, ul, li, form {
+/* Reset some default styles */
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
-/* Set a background color and font styles */
+/* Body styles */
 body {
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: #f5f5f5;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
     color: #333;
 }
 
-/* Style the header section */
-header {
-    background-color: #007BFF;
+/* Header styles */
+.header {
+    background-color: #007bff;
     color: #fff;
     text-align: center;
     padding: 20px 0;
 }
 
-header h1 {
-    font-size: 36px;
+.header-title {
+    font-size: 2.5rem;
     margin-bottom: 10px;
 }
 
-header p {
-    font-size: 18px;
+.header-subtitle {
+    font-size: 1.2rem;
 }
 
-/* Style the navigation menu */
-nav {
+/* Navbar styles */
+.navbar {
     background-color: #333;
 }
 
-nav ul {
-    list-style-type: none;
-    padding: 0;
+.navbar-list {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
 }
 
-nav ul li {
-    display: inline;
-    margin-right: 20px;
+.navbar-item {
+    margin: 0 15px;
 }
 
-nav ul li a {
-    color: #fff;
+.navbar-link {
     text-decoration: none;
+    color: #fff;
     font-weight: bold;
-    font-size: 16px;
+    transition: color 0.3s;
 }
 
-/* Style main content sections */
-.main-content, .services, .contact, .question-form {
+.navbar-link:hover {
+    color: #007bff;
+}
+
+/* Main content styles */
+.main-content {
     padding: 20px;
-}
-
-h2 {
-    font-size: 24px;
-    margin-bottom: 10px;
-}
-
-/* Style the contact details in the contact section */
-.address {
-    font-style: italic;
-}
-
-/* Style the question form */
-.question-form form {
     background-color: #fff;
-    padding: 20px;
+    margin: 20px;
     border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
 
-label {
-    display: block;
-    font-weight: bold;
+/* Services styles */
+.services-list {
+    list-style: none;
+    padding-left: 20px;
+}
+
+.services-list li {
     margin-bottom: 5px;
 }
 
-textarea {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 3px;
-    resize: vertical;
-}
-
-button {
-    background-color: #007BFF;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    font-size: 16px;
-    border-radius: 3px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-button:hover {
-    background-color: #0056b3;
-}
-
-/* Style the footer */
-footer {
-    text-align: center;
-    padding: 10px 0;
-    background-color: #333;
-    color: #fff;
-}
-
-/* Responsive styles for smaller screens */
-@media screen and (max-width: 768px) {
-    header h1 {
-        font-size: 28px;
-    }
-    
-    header p {
-        font-size: 16px;
-    }
-    
-    nav ul li {
-        margin-right: 10px;
-    }
-    
-    .question-form form {
-        padding: 10px;
-    }
-}
-
-/* Style the keyword search section */
-.keyword-search {
-    background-color: #fff;
+/* Contact styles */
+.contact {
     padding: 20px;
+    background-color: #fff;
+    margin: 20px;
     border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    margin-top: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
 
-.keyword-search h2 {
-    font-size: 24px;
-    margin-bottom: 10px;
-}
-
-.keyword-search p {
-    font-size: 16px;
-    margin-bottom: 20px;
-}
-
-/* Style the form */
-.keyword-search form {
-    display: flex;
-    flex-direction: column;
+/* Keyword search styles */
+.keyword-search {
+    padding: 20px;
+    background-color: #fff;
+    margin: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
 
 .keyword-search label {
     font-weight: bold;
-    font-size: 18px;
-    margin-bottom: 10px;
 }
 
 .keyword-search input[type="text"] {
+    width: 100%;
     padding: 10px;
+    margin-top: 10px;
     border: 1px solid #ccc;
-    border-radius: 3px;
-    font-size: 16px;
+    border-radius: 5px;
 }
 
 .keyword-search button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+/* Footer styles */
+.footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* Chat container styles */
+.chat-container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Chat message styles */
+.chat {
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+.chat-message {
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    word-wrap: break-word;
+}
+
+.user {
+    background-color: #007BFF;
+    color: #fff;
+    text-align: right;
+}
+
+.bot {
+    background-color: #f5f5f5;
+    text-align: left;
+}
+
+/* Input and submit button styles */
+#user-input {
+    width: 80%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+#chat-form button {
     background-color: #007BFF;
     color: #fff;
     border: none;
     padding: 10px 20px;
-    font-size: 16px;
     border-radius: 3px;
     cursor: pointer;
-    transition: background-color 0.3s;
-    margin-top: 10px;
 }
 
-.keyword-search button:hover {
+#chat-form button:hover {
     background-color: #0056b3;
 }
 
-/* Style the suggested laws section */
-.suggested-laws {
+
+/* Add these styles to your existing CSS file */
+
+/* Chat container styles */
+.chat-container {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
     margin-top: 20px;
 }
 
-/* Style the suggested law items (you can customize further) */
-.suggested-law {
-    background-color: #f5f5f5;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 3px;
-    margin-bottom: 10px;
+/* Chat messages styles */
+.chat {
+    max-height: 400px;
+    overflow-y: scroll;
 }
 
-.suggested-law p {
-    font-size: 16px;
-    margin: 0;
+.chat-message {
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* User message styles */
+.user {
+    background-color: #007bff;
+    color: #fff;
+    text-align: right;
+}
+
+/* Bot message styles */
+.bot {
+    background-color: #f0f0f0;
+    color: #333;
 }
 
