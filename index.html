@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Legal Assistant</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<body>
+    <header>
+        <h1>Welcome to Your Legal Assistant</h1>
+        <p>Your Trusted Partner in Legal Matters</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section class="main-content">
+        <h2>About Us</h2>
+        <p>We are a team of experienced legal professionals dedicated to providing expert legal assistance to individuals and businesses. Our mission is to...</p>
+    </section>
+
+    <section class="services">
+        <h2>Our Services</h2>
+        <ul>
+            <li>Legal Consultation</li>
+            <li>Document Preparation</li>
+            <li>Contract Review</li>
+            <li>Litigation Support</li>
+        </ul>
+    </section>
+
+    <section class="contact">
+        <h2>Contact Us</h2>
+        <p>If you have any legal inquiries or need our assistance, please feel free to reach out to us:</p>
+        <address>
+            Email: <a href="mailto:info@yourlegalassistant.com">info@yourlegalassistant.com</a><br>
+            Phone: <a href="tel:+1234567890">+1 (234) 567-890</a><br>
+            Address: 123 Legal Lane, Cityville, State 12345
+        </address>
+    </section>
+
+    <section class="keyword-search">
+        <h2>Search for Relevant Laws</h2>
+        <p>Enter keywords related to your legal question, and we'll suggest relevant laws:</p>
+        <div class="suggested-laws" id="suggested-laws">
+            <!-- Suggested laws will be displayed here -->
+        </div>
+        <form id="law-search-form">
+            <label for="keywords">Tell your problem here : </label>
+            <input type="text" id="keywords" name="keywords" required>
+            <button type="submit">Search</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Your Legal Assistant</p>
+    </footer>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script src="script.js"></script>
+<script src="fetch_laws.js"></script>
+</html>
