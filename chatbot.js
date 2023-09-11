@@ -58,6 +58,26 @@ document.addEventListener('DOMContentLoaded', function () {
             
             'cyber': 'With the growth of the digital age, India has introduced cyber laws to address cybercrimes and online activities. The Information Technology Act deals with electronic transactions, data protection, and cybersecurity.',
             // Add more keywords and responses as needed
+
+            'right to information' : 'The rti act allows citizens to request information from public authorities. It promotes transparency and accountability in government by ensuring that citizens have access to government records and information',
+
+            'consumer protection': 'This law is designed to safeguard the rights of consumers. It covers various aspects, including the right to information, protection from unfair trade practices, and the right to seek compensation for defective products or services',
+
+            'motor vehicles act': 'The motor vehicles act regulates road transport and traffic in india. It sets rules for vehicle registration, driver licensing, and road safety. The act also outlines penalties for traffic violations',
+
+            'juvenile justice': 'This law focuses on the welfare and rehabilitation of children in conflict with the law and children in need of care and protection. It emphasizes the principle of the best interests of the child',
+
+            'prevention of corruption': 'This act addresses corruption in government and public services. It defines offenses related to bribery, misappropriation of public funds, and other corrupt practices, and prescribes penalties for those found guilty',
+
+            'domestic violence': 'This law aims to protect women from domestic violence and abuse. It provides legal remedies for victims, including restraining orders, protection orders, and shelter',
+
+            'maternity benefit': 'This act provides maternity benefits to women employees, including paid leave and medical benefits during pregnancy and childbirth. It ensures the well-being of working mothers and their newborns',
+
+            'hindu succession': 'This law governs the inheritance and succession of property among hindus. It ensures equal property rights for daughters and sons in a hindu undivided family',
+
+            'muslim women': 'This act criminalizes the practice of instant triple talaq (talaq-e-biddat) in muslim marriages. It aims to protect the rights of muslim women in divorce proceedings',
+
+            'national food security': 'Nfsa is aimed at ensuring food security for all citizens by providing subsidized food grains through the public distribution system. It guarantees access to food at affordable prices',
         };
 
         // Check if any keyword matches the user's query
