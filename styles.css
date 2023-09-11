@@ -218,3 +218,81 @@ body {
     color: #333;
 }
 
+
+/* Reset some default Bootstrap styles */
+body {
+    background-color: #f8f9fa;
+}
+
+/* Header styles */
+.header {
+    background-color: #007BFF;
+    color: #fff;
+}
+
+.header-title {
+    font-size: 2.5rem;
+}
+
+.header-subtitle {
+    font-size: 1.25rem;
+}
+
+/* Navbar styles */
+.navbar {
+    background-color: #fff;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.navbar-toggler-icon {
+    background-color: #007BFF;
+}
+
+.nav-link {
+    color: #007BFF !important;
+}
+
+/* Main content styles */
+.main-content {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 5px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Chat container styles */
+.chat-container {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.chat {
+    padding: 20px;
+}
+
+.chat-message {
+    margin-bottom: 15px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+/* Contact section styles */
+.contact {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 5px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer styles */
+.footer {
+    background-color: #007BFF;
+    color: #fff;
+}
+
